@@ -203,6 +203,10 @@ export default class MUIPlacesAutocomplete extends React.Component {
           return
         }
 
+        if (this.props.preProcessPredictions) {
+          predictions = this.props.preProcessPredictions(predictions);
+        }
+
         this.setState({ suggestions: predictions })
       },
     )
@@ -281,6 +285,7 @@ MUIPlacesAutocomplete.propTypes = {
   renderTarget: PropTypes.func.isRequired,
   createAutocompleteRequest: PropTypes.func,
   textFieldProps: PropTypes.object,
+  preProcessPredictions: PropTypes.func,
 }
 
 MUIPlacesAutocomplete.defaultProps = {

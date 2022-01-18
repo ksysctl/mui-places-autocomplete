@@ -4,7 +4,7 @@
   "description": "Material-UI React component that provides suggestions/autocompletes places using the Google Places API",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Giners/mui-places-autocomplete"
+    "url": "https://github.com/ksysctl/mui-places-autocomplete"
   },
   "author": "Chris Austin <caustin.adwan@gmail.com>",
   "license": "MIT",
